@@ -19,7 +19,7 @@ called CashMate as a solution. In here we manage users daily budget and expense.
     - Kotlin - API 21: Android 5.0 (Lolipop)
     
 ### 🏷️ How to Contribute to the project
-01.  Copy he link of the repository 
+01.  Copy the link of the repository 
 02.  Open andriod studio
 03.  Import CashMate repository
 04.  Checkout to your branch 
