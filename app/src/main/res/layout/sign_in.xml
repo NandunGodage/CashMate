@@ -5,19 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green"
-    tools:context=".MainActivity">
+    tools:context=".SignInPage">
 
     <ImageView
-        android:id="@+id/landing_img"
+        android:id="@+id/signInLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="180dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/landing_img" />
+        app:srcCompat="@drawable/sign_in" />
 </androidx.constraintlayout.widget.ConstraintLayout>
