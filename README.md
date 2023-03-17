@@ -1,6 +1,6 @@
 # **CashMate** 🍃
 ### 🔖 Batch - Y2.S2.WD.IT.08.02
-### 🔖 Group -j 
+### 🔖 Group - 
 
 |Member | Registration Number| Name | GitHub UserName |
 | :---: | :---: | :---: | :---: |
