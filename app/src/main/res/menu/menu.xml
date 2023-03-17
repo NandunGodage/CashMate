@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:title="menu"
-        android:id="@+id/menuIcon"
+        android:id="@+id/menu"
         android:icon="@drawable/baseline_menu_24"
         app:showAsAction="ifRoom"
         />
