@@ -38,4 +38,6 @@
     <string name="menu_home">Dashboard</string>
     <string name="menu_gallery">Category</string>
     <string name="menu_slideshow">Bank</string>
+    <string name="piechart">Pie Chart</string>
+    <string name="barchart">Bar Chart</string>
 </resources>
