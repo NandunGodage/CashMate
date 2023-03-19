@@ -20,10 +20,11 @@
     <string name="transportation">Transportation</string>
     <string name="other">Other</string>
     <string name="report">Report</string>
-    <string name="date">Date</string>
-    <string name="description">Description</string>
-    <string name="budget">Budget</string>
-    <string name="expense">Expense</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="description">Budget and Expense</string>
+    <string name="budget">Current Budget</string>
+    <string name="expense">Current Expense</string>
     <string name="total">Total</string>
     <string name="title_activity_test">Test</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -36,9 +37,11 @@
     <string name="profile_mail">indudinithennakoon@gmail.com</string>
 
     <string name="menu_home">Dashboard</string>
-    <string name="menu_gallery">Category</string>
-    <string name="menu_slideshow">Bank</string>
+    <string name="menu_gallery">My Profile</string>
+    <string name="menu_slideshow">Chart</string>
     <string name="piechart">Pie Chart</string>
     <string name="barchart">Bar Chart</string>
     <string name="charts">Charts</string>
+    <string name="rupees">Rs.500</string>
+    <string name="update">Update</string>
 </resources>
