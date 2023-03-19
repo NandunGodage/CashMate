@@ -40,4 +40,5 @@
     <string name="menu_slideshow">Bank</string>
     <string name="piechart">Pie Chart</string>
     <string name="barchart">Bar Chart</string>
+    <string name="charts">Charts</string>
 </resources>
