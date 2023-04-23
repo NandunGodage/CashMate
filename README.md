@@ -16,7 +16,7 @@
 called "CashMate" as a solution. In here we manage users daily budget and expense.</p>
 
 ### 🏷️ Technologies used 
-    - Kotlin - API 21: Android 5.0 (Lolipop)
+    - Kotlin - API 30: Android 11 (Red Velvet Cake)
     
 ### 🏷️ How to Contribute to the project
 01.  Copy the link of the repository 
@@ -40,4 +40,4 @@ ______________
 </p>
 
 
-<sub><sup>📌 *documented by @IndudiniThennakoon & proof readed by @NandunGodage 2023* </sup></sub>
+<sub><sup>📌 *documented by @IndudiniThennakoon & proof read by @NandunGodage 2023* </sup></sub>
