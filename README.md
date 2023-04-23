@@ -12,8 +12,8 @@
 ### 🏷️ Brief Description of Project 
 
 ![Dashboard(1)](https://user-images.githubusercontent.com/99181964/225828693-dd1d6f19-276a-448a-8729-a53a1dfe1909.png)
-<p aling ="right">This project primarily focused on solution for economic crisis in Sri Lanaka. So we decided do a mobile application 
-called CashMate as a solution. In here we manage users daily budget and expense.</p>
+<p aling ="right">This project primarily focused on solution for economic crysis in Sri Lanka. So we decided do a mobile application 
+called "CashMate" as a solution. In here we manage users daily budget and expense.</p>
 
 ### 🏷️ Technologies used 
     - Kotlin - API 21: Android 5.0 (Lolipop)
@@ -40,4 +40,4 @@ ______________
 </p>
 
 
-<sub><sup>📌 *documented by @IndudiniThennakoon 2023* </sup></sub>
+<sub><sup>📌 *documented by @IndudiniThennakoon & proof readed by @NandunGodage 2023* </sup></sub>
