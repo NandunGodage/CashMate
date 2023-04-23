@@ -20,13 +20,13 @@ called "CashMate" as a solution. In here we manage users daily budget and expens
     
 ### 🏷️ How to Contribute to the project
 01.  Copy the link of the repository 
-02.  Open andriod studio
+02.  Open android studio
 03.  Import CashMate repository
 04.  Checkout to your branch 
 05.  Do the necessary Changes
 06.  Commit changes
 07.  Push them to **"your"** branch
-08.  Assgin group leader for your pull request
+08.  Assign group leader for your pull request
 09.  Create a Pull Request to the **"development"** branch
 
 ______________
