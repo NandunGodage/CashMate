@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SelCat">34sp</dimen>
+    <dimen name="addAmount">34sp</dimen>
+    <dimen name="InorEx">20sp</dimen>
+    <dimen name="Cat">20sp</dimen>
+    <dimen name="Overview">34sp</dimen>
+    <dimen name="CurrBgt">20sp</dimen>
+    <dimen name="Income">18sp</dimen>
+    <dimen name="CurrExp">20sp</dimen>
+    <dimen name="Expense">18sp</dimen>
+</resources>

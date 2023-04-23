@@ -12,6 +12,12 @@
         android:theme="@style/Theme.CashMate"
         tools:targetApi="31">
         <activity
+            android:name=".activity_overview"
+            android:exported="false" />
+        <activity
+            android:name=".ExpCategory"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

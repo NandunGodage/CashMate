@@ -1,3 +1,28 @@
 <resources>
+
     <string name="app_name">CashMate</string>
+
+    <string-array name="dropInEx">
+        <item>Income</item>>
+        <item>Expense</item>>
+    </string-array>
+
+    <string name="addIncome">Add Income</string>>
+    <string name="addCard">Add Card</string>>
+    <string name="addAmount">Add Amount</string>>
+    <string name="SelCat">Select Category</string>>
+
+    <string name="InorEx">Income Or Expense</string>>
+    <string name="Cat">Category </string>>
+    <string name="AddIncome">AddIncome</string>>
+
+    <string name="addAmt">Overview</string>>
+    <string name="CurrBgt">Current Budget</string>>
+    <string name="Income">Income</string>>
+    <string name="CurrExp">Current Expenses</string>>
+
+
+
+
+
 </resources>
