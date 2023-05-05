@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="addCard" type="id" />
+    <item name="addIncome" type="id" />
+    <item name="SelCat" type="id" />
+    <item name="btnFnD" type="id" />
+    <item name="btnMed" type="id" />
+    <item name="btnShop" type="id" />
+    <item name="btnTrans" type="id" />
+    <item name="btnOther" type="id" />
+</resources>
