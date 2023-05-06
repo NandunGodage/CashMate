@@ -112,7 +112,6 @@ class SignUpActivity : AppCompatActivity() {
             txtPassword.error = "Please enter your password"
             return
         }
-
         if (userConfirmPasswordVal.isEmpty()) {
             txtConfirmPassword.error = "Please confirm your password"
             return
