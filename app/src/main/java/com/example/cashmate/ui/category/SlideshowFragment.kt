@@ -22,6 +22,9 @@ class SlideshowFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    lateinit var goBarChart: Button
+    lateinit var goPieChart: Button
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -32,6 +35,23 @@ class SlideshowFragment : Fragment() {
 
         _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        goBarChart = root.findViewById(R.id.go_bar_chart)
+        goPieChart = root.findViewById(R.id.go_pie_chart)
+
+        goBarChart.setOnClickListener {
+            println("goBarChart.setOnClickListener")
+            var intent = Intent(activity, BarChartActivity::class.java)
+            startActivity(intent)
+
+        }
+
+        goPieChart.setOnClickListener {
+            println("goPieChart.setOnClickListener")
+            var intent = Intent(activity, PieChartActivity::class.java)
+            startActivity(intent)
+            activity?.finish()
+        }
 
         return root
     }
