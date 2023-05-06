@@ -13,16 +13,21 @@ class ChartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chart)
 
-        goBarChart=findViewById(R.id.go_bar_chart)
-        goPieChart=findViewById(R.id.go_pie_chart)
+        goBarChart = findViewById(R.id.go_bar_chart)
+        goPieChart = findViewById(R.id.go_pie_chart)
 
-        goBarChart.setOnClickListener{
-            startActivity(Intent(this,BarChartActivity:: class.java))
+        goBarChart.setOnClickListener {
 
+            println("goBarChart.setOnClickListener")
+            var intent = Intent(this, BarChartActivity::class.java)
+            startActivity(intent)
+            finish()
         }
-        goPieChart.setOnClickListener{
-            startActivity(Intent(this,PieChartActivity:: class.java))
-
+        goPieChart.setOnClickListener {
+            println("goPieChart.setOnClickListener")
+            var intent = Intent(this, PieChartActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
