@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.cashmate.MainActivity
 import com.example.cashmate.EditProfile
 import com.example.cashmate.R
 import com.example.cashmate.SignInPage

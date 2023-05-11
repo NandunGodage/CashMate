@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadExpencess">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/inc"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/readincome"
+            android:textAlignment="center"
+            android:textColor="#131313"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amoun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/Income_Amount"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/r_amount"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_rounded"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="20dp"
+            android:text="  "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/Category"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/r_category"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_rounded"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="20dp"
+            android:text="  "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/Light_Blue"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/edit"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/Navy_Blue"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

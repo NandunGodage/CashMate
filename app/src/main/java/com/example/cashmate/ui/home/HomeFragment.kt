@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.cashmate.Create_Payment
+import com.example.cashmate.AddExpencess
 import com.example.cashmate.databinding.FragmentHomeBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -45,6 +46,16 @@ private var _binding: FragmentHomeBinding? = null
           startActivity(intent)
       }
 
+    // Add a reference to the addcategory floating action button
+      val catButton: FloatingActionButton = binding.addCategory
+
+      // Set an onClickListener for the floating action button
+      catButton.setOnClickListener {
+          val intent = Intent(activity, AddExpencess::class.java)
+          startActivity(intent)
+          // Create an intent to launch the Create_Payment activity
+
+      }
 
 
 

@@ -60,6 +60,22 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.CashMate.NoActionBar" />
         <activity
+            android:name=".AddExpencess"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CashMate.NoActionBar" />
+        <activity
+            android:name=".ReadExpencess"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CashMate.NoActionBar" />
+        <activity
+            android:name=".EditExpencess"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CashMate.NoActionBar" />
+
+        <activity
             android:name=".SignInPage"
             android:exported="true"
             android:label="@string/app_name"
