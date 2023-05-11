@@ -52,6 +52,10 @@ class GalleryFragment : Fragment() {
         userName = root.findViewById(R.id.editUserNameValue)
         userEmail = root.findViewById(R.id.editTextTextEmailAddress)
 
+        //username and email are not editable
+        userName?.isEnabled = false
+        userEmail?.isEnabled = false
+
 
         //get username and email from in shared preferences
         val sharedPref = activity?.getSharedPreferences("MyPref", AppCompatActivity.MODE_PRIVATE)
@@ -68,62 +72,56 @@ class GalleryFragment : Fragment() {
         }
 
         btnDeleteProfile?.setOnClickListener {
-       try {
-                //delete user from database passing email and password
-                val dbRef = FirebaseDatabase.getInstance().getReference("Users")
-                dbRef.addValueEventListener(object : ValueEventListener {
-                    override fun onDataChange(snapshot: DataSnapshot) {
-                        if (snapshot.exists()) {
-                            for (userSnapshot in snapshot.children) {
-                                val user = userSnapshot.getValue(User::class.java)
-                                if (user != null) {
-                                    if (user.email == email && user.password == password) {
-                                        //user found
-                                        //delete user from database
-                                        dbRef.child(userSnapshot.key.toString()).removeValue()
-                                        //delete user from storage
-                                        val storageRef =
-                                            FirebaseStorage.getInstance().getReference()
-                                        val desertRef = storageRef.child("images/${user.email}")
-                                        desertRef.delete().addOnSuccessListener {
-                                            // File deleted successfully
-                                            Toast.makeText(
-                                                activity,
-                                                "User deleted successfully",
-                                                Toast.LENGTH_SHORT
-                                            ).show()
-                                            //navigate to sign in page
-                                            var intent = Intent(activity, SignInPage::class.java)
-                                            startActivity(intent)
-                                            activity?.finish()
-                                        }.addOnFailureListener {
-                                            // Uh-oh, an error occurred!
-                                            Toast.makeText(
-                                                activity,
-                                                "Error occurred while deleting user",
-                                                Toast.LENGTH_SHORT
-                                            ).show()
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    override fun onCancelled(error: DatabaseError) {
-                        Toast.makeText(
-                            activity,
-                            "Error occurred while deleting user",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                })
-            } catch (e: FirebaseAuthException) {
-                Toast.makeText(activity, "User not found", Toast.LENGTH_SHORT).show()
-            }
+            deleteProfile(email, password)
         }
 
         return root
+
+    }
+
+    fun deleteProfile(email: String, password: String) {
+        //delete profile from database by using email and password
+        val dbRef = FirebaseDatabase.getInstance().getReference("Users")
+        dbRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                if (snapshot.exists()) {
+                    for (userSnapshot in snapshot.children) {
+                        val user = userSnapshot.getValue(User::class.java)
+                        println("user: ${user.toString()}}")
+                        if (user != null) {
+                            if (user.email == email && user.password == password) {
+                                //user found
+                                //delete user details from database
+                                userSnapshot.ref.removeValue()
+                                //delete user details from shared preferences
+                                val sharedPref =
+                                    activity?.getSharedPreferences(
+                                        "MyPref",
+                                        AppCompatActivity.MODE_PRIVATE
+                                    )
+                                val editor = sharedPref?.edit()
+                                editor?.clear()
+                                editor?.apply()
+                                //display toast message
+                                Toast.makeText(
+                                    activity,
+                                    "Profile deleted successfully",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                //navigate to sign in page
+                                var intent = Intent(activity, SignInPage::class.java)
+                                startActivity(intent)
+                                activity?.finish()
+                            }
+                        }
+                    }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                println("error: ${error.message}")
+            }
+        })
 
     }
 
@@ -153,9 +151,18 @@ class GalleryFragment : Fragment() {
                                 editor?.putString("password", user.password)
                                 editor?.putString("userName", user.userName)
                                 editor?.apply()
+                                //username and email are not editable
+                                userName?.isEnabled = true
+                                userEmail?.isEnabled = true
+
+
                                 //set username and email in edit text
                                 userEmail?.setText(user.email)
                                 userName?.setText(user.userName)
+
+                                //username and email are not editable
+                                userName?.isEnabled = false
+                                userEmail?.isEnabled = false
                             }
                         }
                     }
@@ -174,4 +181,5 @@ class GalleryFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }

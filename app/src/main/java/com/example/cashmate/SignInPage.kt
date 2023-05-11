@@ -48,23 +48,22 @@ class SignInPage : AppCompatActivity() {
                 if (snapshot.exists()) {
                     for (userSnapshot in snapshot.children) {
                         val user = userSnapshot.getValue(User::class.java)
-                        if (user != null) {
-                            if (user.email == txtEmail.text.toString() && user.password == txtPassword.text.toString()) {
-                                //user found
-                                //save user details in shared preferences
-                                //navigate to home page
+                        when {
+                            user != null -> {
+                                if (user.email == txtEmail.text.toString() && user.password == txtPassword.text.toString()) {
+                                    //user found
+                                    //save user details in shared preferences
+                                    //navigate to home page
+                                    val sharedPref = getSharedPreferences("MyPref", MODE_PRIVATE)
+                                    val editor = sharedPref.edit()
+                                    editor.putString("email", user.email)
+                                    editor.putString("password", user.password)
+                                    editor.apply()
 
-                                //save user details in shared preferences
-                                val sharedPref = getSharedPreferences("MyPref", MODE_PRIVATE)
-                                val editor = sharedPref.edit()
-                                editor.putString("email", user.email)
-                                editor.putString("password", user.password)
-                                editor.apply()
-
-
-                                var intent = Intent(this@SignInPage, Navigation::class.java)
-                                startActivity(intent)
-                                finish()
+                                    val intent = Intent(this@SignInPage, Navigation::class.java)
+                                    startActivity(intent)
+                                    finish()
+                                }
                             }
                         }
                     }
