@@ -11,7 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CashMate"
         tools:targetApi="31">
-
         <activity
             android:name=".Successful_Payment"
             android:exported="false"
@@ -23,13 +22,10 @@
         <activity
             android:name=".Show_Payment"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-
-            />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Create_Payment"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -44,6 +40,17 @@
             android:name=".ChartActivity"
             android:exported="false"
             android:theme="@style/Theme.CashMate.NoActionBar" />
+
+        <!--add expenses-->
+        <activity
+            android:name=".AddExpencess"
+            android:exported="false"
+            android:theme="@style/Theme.CashMate.NoActionBar" />
+        <activity
+            android:name=".EditExpencess"
+            android:exported="false"
+            android:theme="@style/Theme.CashMate.NoActionBar" />
+
         <activity
             android:name=".Navigation"
             android:exported="false"
@@ -72,4 +79,5 @@
                 android:value=".SignInPage" />
         </activity>
     </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
