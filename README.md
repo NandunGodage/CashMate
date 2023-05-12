@@ -32,7 +32,7 @@ called "CashMate" as a solution. In here we manage users daily budget and expens
 ______________
 <p align ="center">
 <a href="https://developer.android.com/kotlin?gclid=CjwKCAjw_MqgBhAGEiwAnYOAevT2XCJ5thGGNqaEx0JhLSb8M0njOSE7cujnyxd-SaIdWEAYO8lKmBoCRXkQAvD_BwE&gclsrc=aw.ds">
-<img src="https://user-images.githubusercontent.com/99181964/225831749-8575f624-66f3-4b8c-91ea-fab510fc9fbb.png" /
+<img src="https://user-images.githubusercontent.com/99181964/225831749-8575f624-66f3-4b8c-91ea-fab510fc9fbb.png"> /
 </a>
 <a href="https://developer.android.com/">
 <img src="https://img.icons8.com/color/48/null/android-studio--v2.png"/>
