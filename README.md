@@ -1,6 +1,6 @@
 # **CashMate** 🍃
 ### 🔖 Batch - Y2.S2.WD.IT.08.02
-### 🔖 Group - 
+### 🔖 Group - K-Force
 
 |Member | Registration Number| Name | GitHub UserName |
 | :---: | :---: | :---: | :---: |
@@ -12,21 +12,21 @@
 ### 🏷️ Brief Description of Project 
 
 ![Dashboard(1)](https://user-images.githubusercontent.com/99181964/225828693-dd1d6f19-276a-448a-8729-a53a1dfe1909.png)
-<p aling ="right">This project primarily focused on solution for economic crisis in Sri Lanaka. So we decided do a mobile application 
-called CashMate as a solution. In here we manage users daily budget and expense.</p>
+<p aling ="right">This project primarily focused on solution for economic crysis in Sri Lanka. So we decided do a mobile application 
+called "CashMate" as a solution. In here we manage users daily budget and expense.</p>
 
 ### 🏷️ Technologies used 
-    - Kotlin - API 21: Android 5.0 (Lolipop)
+    - Kotlin - API 30: Android 11 (Red Velvet Cake)
     
 ### 🏷️ How to Contribute to the project
 01.  Copy the link of the repository 
-02.  Open andriod studio
+02.  Open android studio
 03.  Import CashMate repository
 04.  Checkout to your branch 
 05.  Do the necessary Changes
 06.  Commit changes
 07.  Push them to **"your"** branch
-08.  Assgin group leader for your pull request
+08.  Assign group leader for your pull request
 09.  Create a Pull Request to the **"development"** branch
 
 ______________
@@ -40,4 +40,4 @@ ______________
 </p>
 
 
-<sub><sup>📌 *documented by @IndudiniThennakoon 2023* </sup></sub>
+<sub><sup>📌 *documented by @IndudiniThennakoon & proof read by @NandunGodage 2023* </sup></sub>
