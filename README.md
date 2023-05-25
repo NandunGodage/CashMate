@@ -15,8 +15,12 @@
 <p aling ="right">This project primarily focused on solution for economic crysis in Sri Lanka. So we decided do a mobile application 
 called "CashMate" as a solution. In here we manage users daily budget and expense.</p>
 
-### 🏷️ Technologies used 
+### 🏷️ Technologies & Tools used 
     - Kotlin - API 30: Android 11 (Red Velvet Cake)
+    - Firebase -
+    - Android Studio -
+    - Figma -
+    - Canva -
     
 ### 🏷️ How to Contribute to the project
 01.  Copy the link of the repository 
