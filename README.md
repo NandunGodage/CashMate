@@ -21,6 +21,7 @@ called "CashMate" as a solution. In here we manage users daily budget and expens
     - Android Studio -
     - Figma -
     - Canva -
+    - TortoiseGit -
     
 ### 🏷️ How to Contribute to the project
 01.  Copy the link of the repository 
